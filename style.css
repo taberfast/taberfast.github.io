@@ -1,0 +1,116 @@
+@font-face {
+    font-family: "minecraft";  
+    src: url("fonts/minecraft.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal;
+     }
+.nickname {
+    color: pink;
+    font-family: minecraft;
+    font-size: xx-large;
+    position: absolute;
+    top: 50%;
+    left: 43%;
+}
+.txt {
+    color: white;
+    font-family: "minecraft";
+    position: absolute;
+    top: 55%;
+    left: 43%;
+}
+.avatar {
+    border-radius: 50%;
+    position: absolute;
+    top: 25%;
+    left: 43%;
+}
+.discordbutton {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 65%;
+    left: 25%;
+}
+.discordbuttontxt {
+    color: cadetblue;
+    font-family: minecraft;
+    position: absolute;
+    top: 69.5%;
+    left: 22.7%;
+}
+.sighostbutton {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 65%;
+    left: 35%;
+}
+.sighostbuttontxt {
+    color: whitesmoke;
+    font-family: minecraft;
+    position: absolute;
+    top: 69.5%;
+    left: 33.5%;
+}
+.steambutton {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 65%;
+    left: 45%;
+}
+.steambuttontxt {
+    color: cornflowerblue;
+    font-family: minecraft;
+    position: absolute;
+    top: 69.5%;
+    left: 44.8%;
+}
+.tgbutton {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 65%;
+    left: 55%;
+}
+.tgbuttontxt {
+    color: cornflowerblue;
+    font-family: minecraft;
+    position: absolute;
+    top: 69.5%;
+    left: 53.9%;
+}
+.ovkbutton {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 65%;
+    left: 65%;
+}
+.ovkbuttontxt {
+    color: cornflowerblue;
+    font-family: minecraft;
+    position: absolute;
+    top: 69.5%;
+    left: 64.3%;
+}
+.vkbutton {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 65%;
+    left: 75%;
+}
+.vkbuttontxt {
+    color: cornflowerblue;
+    font-family: minecraft;
+    position: absolute;
+    top: 69.5%;
+    left: 75.7%;
+}
+.music {
+    position: absolute;
+    top: 90%;
+    left: 43%;
+}
