@@ -1,111 +1,151 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>yosemite</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body bgcolor="000000">
-        <div class="profile-item">
-            <div class="profile-item nick"></div>
-                <p class="nickname">fuckyosemite</p>
-            </div>
-            
-            <div class="profile-item about">
-                <p class="txt">пиздец</p>
-            </div>
+<!DOCTYPE html><html><head>
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
 
-            <div class="profile-item avatar">
-                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
-                    <img src="https://images-ext-2.discordapp.net/external/EZpH4Ap9XR5_VdXTa5fpcvNLsO7JT5cshgAKMUluqUY/%3Fsize%3D512/https/cdn.discordapp.com/avatars/407497759781027841/6d9576035d51ea00d966db373b4d1853.png" class="avatar">
-                </a>
-            </div>
-        </div>
-        
-        <div class="discord-item"></div>
-            <div class="discord-item button">
-                <a href="https://discord.gg/GzQb3ymeRF">
-                    <img src="images/discord.png" class="discordbutton">
-                </a>
-            </div>
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
 
-            <div class="discord-item text">
-                <a href="https://discord.gg/GzQb3ymeRF">
-                    <p class="discordbuttontxt">SCHNAPPI Club</p>
-                </a>
-            </div>
-        </div>
-        
-        <div class="sighost-item">
-            <div class="sighost-item button">
-                <a href="https://signed.host/">
-                    <img src="images/sighost.png" class="sighostbutton">
-                </a>
-            </div>
-            
-            <div class="sighost-item text">
-                <a href="https://signed.host/">
-                    <p class="sighostbuttontxt">signed.host</p>
-                </a>
-            </div>
-        </div>
-        
-        <div class="steam-item">
-            <div class="steam-item button">
-                <a href="https://steamcommunity.com/id/y0sem1te/">
-                    <img src="images/steam.png" class="steambutton">
-                </a>
-            </div>
+    For more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
 
-            <div class="steam-item text">
-                <a href="https://steamcommunity.com/id/y0sem1te/">
-                    <p class="steambuttontxt">Steam</p>
-                </a>
-            </div>
-        </div>
-        
-        <div class="telegram-item">
-            <div class="telegram-item button">
-                <a href="https://t.me/tbfast">
-                    <img src="images/telegram.png" class="tgbutton">
-                </a>
-            </div>
+    This is a placeholder for base href that will be replaced by the value of
+    the `--base-href` argument provided to `flutter build`.
+  -->
+  <base href="/">
 
-            <div class="telegram-item text">
-                <a href="https://t.me/tbfast">
-                    <p class="tgbuttontxt">Telegram</p>
-                </a>
-            </div>
-        </div>
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="">
 
-        <div class="ovk-item">
-            <div class="ovk-item button">
-                <a href="https://openvk.su/yosemite">
-                    <img src="images/openvk.png" class="ovkbutton">
-                </a>
-            </div>
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="my_site_new">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
-            <div class="ovk-item text">
-                <a href="https://openvk.su/yosemite">
-                    <p class="ovkbuttontxt">OpenVK</p>
-                </a>
-            </div>
-        </div>
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png">
 
-        <div class="vk-item">
-            <div class="vk-item button">
-                <a href="https://vk.com/cukablyatnahyu">
-                    <img src="images/vk.png" class="vkbutton">
-                </a>
-            </div>
-            <div class="vk-item text">
-                <a href="https://vk.com/cukablyatnahyu">
-                    <p class="vkbuttontxt">VK</p>
-                </a>
-            </div>
-        </div>
-        
-        <audio controls class="music">
-            <source src="music.mp3">
-          </audio>          
-    </body>
-</html>
+  <!-- Flet specific -->
+  <meta name="flet-route-url-strategy" content="path">
+  <meta name="flet-web-pyodide" content="true">
+
+  <title>my_site_new</title>
+  <link rel="manifest" href="manifest.json">
+
+  <script>
+    var webRenderer = "canvaskit";
+    var useColorEmoji = "false" == "true";
+    var pythonModuleName = "main";
+  </script>
+
+  <script src="python.js"></script>
+
+  <script>
+    // The value below is injected by flutter build, do not touch.
+    const serviceWorkerVersion = "2683013096";
+  </script>
+  <!-- This script adds the flutter initialization JS code -->
+  <script src="flutter.js" defer=""></script>
+  <style id="splash-screen-style">
+    html {
+      height: 100%
+    }
+
+    body {
+      margin: 0;
+      min-height: 100%;
+      background-color: #ffffff;
+          background-size: 100% 100%;
+    }
+
+    .center {
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+    }
+
+    .contain {
+      display:block;
+      width:100%; height:100%;
+      object-fit: contain;
+    }
+
+    .stretch {
+      display:block;
+      width:100%; height:100%;
+    }
+
+    .cover {
+      display:block;
+      width:100%; height:100%;
+      object-fit: cover;
+    }
+
+    .bottom {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      -ms-transform: translate(-50%, 0);
+      transform: translate(-50%, 0);
+    }
+
+    .bottomLeft {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+
+    .bottomRight {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      body {
+        background-color: #222222;
+          }
+    }
+  </style>
+  <script id="splash-screen-script">
+    function removeSplashFromWeb() {
+      document.getElementById("splash")?.remove();
+      document.getElementById("splash-branding")?.remove();
+      document.body.style.background = "transparent";
+    }
+  </script>
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+</head>
+
+<body>
+  <picture id="splash">
+      <source srcset="splash/img/light-1x.png 1x, splash/img/light-2x.png 2x, splash/img/light-3x.png 3x, splash/img/light-4x.png 4x" media="(prefers-color-scheme: light)">
+      <source srcset="splash/img/dark-1x.png 1x, splash/img/dark-2x.png 2x, splash/img/dark-3x.png 3x, splash/img/dark-4x.png 4x" media="(prefers-color-scheme: dark)">
+      <img class="center" aria-hidden="true" src="splash/img/light-1x.png" alt="">
+  </picture>
+  <script>
+    window.addEventListener('load', function (ev) {
+      // Download main.dart.js
+      _flutter.loader.loadEntrypoint({
+        serviceWorker: {
+          serviceWorkerVersion: serviceWorkerVersion,
+        },
+        onEntrypointLoaded: function (engineInitializer) {
+          engineInitializer.initializeEngine({
+            renderer: webRenderer,
+            useColorEmoji: useColorEmoji,
+          }).then(function (appRunner) {
+            appRunner.runApp();
+          });
+        }
+      });
+    });
+  </script>
+
+
+</body></html>
